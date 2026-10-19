@@ -1,9 +1,8 @@
 /**
  * Dating Web App Configuration
- * If deploying Frontend and Backend as separate Vercel projects,
- * set your Backend Vercel domain below (e.g. 'https://dating-backend.vercel.app').
- * When running locally on localhost:5000, leave it empty ('') for same-origin.
+ * Automatically switches between local development (empty origin)
+ * and production Vercel backend.
  */
 window.API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
   ? ''
-  : ''; // Set to 'https://your-backend.vercel.app' if backend is on a separate domain
+  : 'https://dating-backend-dusky.vercel.app';
