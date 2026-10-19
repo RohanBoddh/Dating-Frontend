@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>When Are You Free? ❤️ — Dating</title>
+  <meta name="description" content="Pick the perfect day for our romantic date.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📅</text></svg>">
+</head>
+<body>
+
+  <!-- Site Navigation & Progress -->
+  <header class="site-header">
+    <a href="index.html" class="brand-logo" aria-label="Dating Home">
+      <span>Dating</span>
+      <span class="heart-icon">❤️</span>
+    </a>
+    <div class="steps-tracker" aria-label="Proposal Progress">
+      <span class="step-dot completed" title="Step 1: The Question"></span>
+      <span class="step-dot completed" title="Step 2: Restaurant"></span>
+      <span class="step-dot active" title="Step 3: Date & Time"></span>
+      <span class="step-dot" title="Step 4: Confirmed"></span>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="page-wrapper">
+    <article class="glass-card" style="max-width: 580px;">
+      <span class="card-badge">Step 3: Pick Our Day 🗓️🐾</span>
+
+      <h1 class="page-title">So... when are you free? <span class="accent-pink">💗</span></h1>
+      <p class="page-subtitle">Pick the perfect day for our little date.</p>
+
+      <!-- Selected Destination Reminder -->
+      <div id="selected-restaurant-banner" style="margin-bottom: 24px; padding: 12px 18px; background: rgba(255, 71, 126, 0.08); border-radius: 12px; font-weight: 600; font-size: 0.92rem; color: #9c1b48; display: inline-flex; align-items: center; gap: 8px;">
+        <span>🍽️</span> Destination: <strong id="restaurant-name-preview">Loading chosen place...</strong>
+      </div>
+
+      <!-- Date Selection Form -->
+      <form id="date-selection-form" novalidate>
+        <!-- User's Real Name -->
+        <div class="form-group">
+          <label for="user-name-input" class="form-label">
+            Your Real Name 👤 <span style="font-size: 0.8rem; font-weight: 600; color: #e91e63;">* Required</span>
+          </label>
+          <input 
+            type="text" 
+            id="user-name-input" 
+            name="senderName" 
+            class="form-input" 
+            placeholder="e.g. Your real full name (as on your email) 🥰" 
+            required 
+            maxlength="100"
+            autocomplete="name"
+          >
+        </div>
+
+        <!-- User's Real Email Address -->
+        <div class="form-group">
+          <label for="user-email-input" class="form-label">
+            Your Email Address (Gmail) 📧 <span style="font-size: 0.8rem; font-weight: 600; color: #e91e63;">* Required</span>
+          </label>
+          <input 
+            type="email" 
+            id="user-email-input" 
+            name="senderEmail" 
+            class="form-input" 
+            placeholder="e.g. yourname@gmail.com 💌" 
+            required 
+            maxlength="120"
+            autocomplete="email"
+          >
+        </div>
+
+        <!-- Date Picker Input -->
+        <div class="form-group">
+          <label for="date-input" class="form-label">Pick a Day 📅</label>
+          <input 
+            type="date" 
+            id="date-input" 
+            name="date" 
+            class="form-input" 
+            required 
+            aria-describedby="date-preview-text"
+          >
+        </div>
+
+        <!-- Live Readable Date Preview -->
+        <div class="date-readable-preview" id="date-preview-box">
+          <span id="date-preview-text">Please pick a date on the calendar above 💕</span>
+        </div>
+
+        <!-- Time Slot Selection -->
+        <div class="form-group">
+          <label class="form-label">What Time? ⏰</label>
+          <div class="time-slots" id="time-slots-container">
+            <button type="button" class="time-chip" data-time="Cozy Afternoon Lunch (1:00 PM)">
+              ☀️ Lunch (1:00 PM)
+            </button>
+            <button type="button" class="time-chip" data-time="Romantic Sunset Dinner (5:30 PM)">
+              🌅 Sunset (5:30 PM)
+            </button>
+            <button type="button" class="time-chip active" data-time="Candlelight Dinner (7:30 PM)">
+              🕯️ Candlelight (7:30 PM)
+            </button>
+            <button type="button" class="time-chip" data-time="Late Night Sweets (9:00 PM)">
+              🌙 Late Night (9:00 PM)
+            </button>
+          </div>
+          <input type="hidden" id="time-preference-input" name="timePreference" value="Candlelight Dinner (7:30 PM)">
+        </div>
+
+        <!-- Optional Special Requests / Message -->
+        <div class="form-group">
+          <label for="special-request" class="form-label">
+            Special Request or Sweet Message 💌 <span style="font-size: 0.8rem; font-weight: normal; color: #888;">(Optional)</span>
+          </label>
+          <textarea 
+            id="special-request" 
+            name="specialRequest" 
+            class="form-textarea" 
+            placeholder="e.g. Save room for dessert, play our favorite song, or dress in matching colors! 💕"
+            maxlength="500"
+          ></textarea>
+        </div>
+
+        <p class="hint-text" style="margin-bottom: 24px;">Every day with you would be special ❤️</p>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary" id="confirm-date-btn" style="width: 100%;">
+          <span class="btn-text">Confirm Our Date 💖</span>
+        </button>
+      </form>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Made with <span class="heart-icon">❤️</span> just for you.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/background-hearts.js"></script>
+  <script src="js/music-player.js"></script>
+  <script src="js/date-picker.js"></script>
+</body>
+</html>

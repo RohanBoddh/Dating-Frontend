@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dating ❤️ — Will You Go On A Date With Me?</title>
+  <meta name="description" content="A cute romantic date proposal website created with love.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+</head>
+<body class="no-scroll">
+
+  <!-- Site Navigation & Progress -->
+  <header class="site-header">
+    <a href="index.html" class="brand-logo" aria-label="Dating Home">
+      <span>Dating</span>
+      <span class="heart-icon">❤️</span>
+    </a>
+    <div class="steps-tracker" aria-label="Proposal Progress">
+      <span class="step-dot active" title="Step 1: The Question"></span>
+      <span class="step-dot" title="Step 2: Restaurant"></span>
+      <span class="step-dot" title="Step 3: Date & Time"></span>
+      <span class="step-dot" title="Step 4: Confirmed"></span>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="page-wrapper">
+    <!-- Proposal Card (Initial State) -->
+    <article class="glass-card" id="proposal-card">
+      <span class="card-badge">A Special Question 💌</span>
+      
+      <div class="card-character-wrapper">
+        <img 
+          src="assets/images/proposal-pug.jpg" 
+          alt="Cute pug puppy with puppy eyes asking for a date" 
+          class="character-img"
+          id="proposal-avatar"
+        >
+      </div>
+
+      <h1 class="page-title">Hey Beautiful <span class="accent-pink">❤️</span></h1>
+      <p class="page-subtitle">Someone has a very important question for you…</p>
+
+      <div class="proposal-question">
+        🌸 Will you go on a date with me? 🌸
+      </div>
+
+      <!-- Interactive Proposal Buttons -->
+      <div class="buttons-row" id="buttons-container">
+        <!-- Yes Button (Fixed & Accessible) -->
+        <button type="button" class="btn btn-primary btn-yes" id="yes-btn">
+          YES ♥
+        </button>
+
+        <!-- No Button Slot to preserve layout -->
+        <div class="no-btn-slot">
+          <!-- Playful Runaway No Button -->
+          <button type="button" class="btn btn-no" id="no-btn" aria-label="No option">
+            no 🐾
+          </button>
+        </div>
+      </div>
+
+      <p class="hint-text" id="hint-msg">Psst… I think you know which one to choose 😉❤️</p>
+    </article>
+
+    <!-- Reaction Card (Shown when YES is clicked, inspired by viral reel) -->
+    <article class="glass-card" id="reaction-card" style="display: none;">
+      <div class="card-character-wrapper">
+        <img 
+          src="assets/images/proposal-bear.jpg" 
+          alt="Celebrating cute teddy bear with a red rose" 
+          class="character-img"
+        >
+      </div>
+      <h2 class="page-title">WAIT YOU ACTUALLY SAID YES?? 😭</h2>
+      <p class="page-subtitle" style="font-size: 1.15rem; color: #d81b60; font-weight: 600;">
+        I was so ready for you to say no 😂
+      </p>
+      <div style="margin-top: 24px;">
+        <button type="button" class="btn btn-primary" id="continue-to-food-btn">
+          okay okay! →
+        </button>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Made with <span class="heart-icon">❤️</span> just for you.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/background-hearts.js"></script>
+  <script src="js/music-player.js"></script>
+  <script src="js/proposal.js"></script>
+</body>
+</html>

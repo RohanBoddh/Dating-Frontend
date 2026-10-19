@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Are We Feeling? 🍽️✨ — Dating</title>
+  <meta name="description" content="Pick our date vibe: Pizza, Sushi, Burgers, Pasta, Tacos, or Ramen!">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍽️</text></svg>">
+</head>
+<body class="no-scroll">
+
+  <!-- Site Navigation & Progress -->
+  <header class="site-header">
+    <a href="index.html" class="brand-logo" aria-label="Dating Home">
+      <span>Dating</span>
+      <span class="heart-icon">❤️</span>
+    </a>
+    <div class="steps-tracker" aria-label="Proposal Progress">
+      <span class="step-dot completed" title="Step 1: The Question"></span>
+      <span class="step-dot active" title="Step 2: Food Vibe"></span>
+      <span class="step-dot" title="Step 3: Date & Time"></span>
+      <span class="step-dot" title="Step 4: Confirmed"></span>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="page-wrapper">
+    <!-- Main Food Vibe Card (Exact match to reel screenshot) -->
+    <article class="glass-card" style="max-width: 520px;">
+      
+      <h1 class="page-title" style="font-size: 2.1rem; margin-bottom: 4px;">
+        What are we feeling? 🍽️✨
+      </h1>
+      <p class="vibe-subtitle">pick your vibe</p>
+
+      <!-- 3x2 Food Vibe Grid -->
+      <div class="food-vibe-grid" id="food-vibe-grid">
+        <!-- 1. Pizza -->
+        <div class="food-vibe-card" data-id="pizza" data-name="Pizza Date 🍕">
+          <span class="food-vibe-emoji">🍕</span>
+          <span class="food-vibe-label">Pizza</span>
+        </div>
+
+        <!-- 2. Sushi -->
+        <div class="food-vibe-card" data-id="sushi" data-name="Sushi Date 🍣">
+          <span class="food-vibe-emoji">🍣</span>
+          <span class="food-vibe-label">Sushi</span>
+        </div>
+
+        <!-- 3. Burgers -->
+        <div class="food-vibe-card" data-id="burgers" data-name="Burgers Date 🍔">
+          <span class="food-vibe-emoji">🍔</span>
+          <span class="food-vibe-label">Burgers</span>
+        </div>
+
+        <!-- 4. Pasta -->
+        <div class="food-vibe-card" data-id="pasta" data-name="Pasta Date 🍝">
+          <span class="food-vibe-emoji">🍝</span>
+          <span class="food-vibe-label">Pasta</span>
+        </div>
+
+        <!-- 5. Tacos -->
+        <div class="food-vibe-card" data-id="tacos" data-name="Tacos Date 🌮">
+          <span class="food-vibe-emoji">🌮</span>
+          <span class="food-vibe-label">Tacos</span>
+        </div>
+
+        <!-- 6. Ramen -->
+        <div class="food-vibe-card" data-id="ramen" data-name="Ramen Date 🍜">
+          <span class="food-vibe-emoji">🍜</span>
+          <span class="food-vibe-label">Ramen</span>
+        </div>
+      </div>
+
+      <!-- Action Button -->
+      <div style="margin-top: 18px;">
+        <button type="button" class="btn btn-primary" id="continue-date-btn" style="min-width: 260px;">
+          let's set the date! →
+        </button>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>Made with <span class="heart-icon">❤️</span> just for you.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/background-hearts.js"></script>
+  <script src="js/music-player.js"></script>
+  <script src="js/restaurants.js"></script>
+</body>
+</html>
