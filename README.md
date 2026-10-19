@@ -2,6 +2,9 @@
 
 Romantic date proposal interactive web application.
 
+🌐 **Live Website:** [https://dating-frontend-sepia.vercel.app](https://dating-frontend-sepia.vercel.app)  
+🔌 **Backend API:** [https://dating-backend-dusky.vercel.app](https://dating-backend-dusky.vercel.app)
+
 ## Features
 - 🐾 Playful "No" Runaway Button (cannot be clicked)
 - 🍕 Food Vibe Selection Card (Pizza, Sushi, Burgers, Pasta, Tacos, Ramen)
@@ -12,6 +15,6 @@ Romantic date proposal interactive web application.
 - 🌸 Floating Hearts & Confetti Particles
 
 ## Vercel Deployment
-1. Import this repository in Vercel.
-2. Framework Preset: **Other** (Static HTML/CSS/JS).
-3. Deploy!
+- **Project Name:** `dating-frontend`
+- **Framework Preset:** Other (Static HTML/CSS/JS)
+- **Production URL:** [https://dating-frontend-sepia.vercel.app](https://dating-frontend-sepia.vercel.app)
